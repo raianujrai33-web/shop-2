@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Architectural Services | Durga Interiors</title>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Outfit:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="nav-brand">Durga <span>Interiors</span></div>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="portfolio.html">Portfolio</a></li>
+            <li><a href="services.html" class="active">Services</a></li>
+            <li><a href="contact.html">Showroom</a></li>
+            <li><a href="contact.html" class="btn-gold">Private Consultation</a></li>
+        </ul>
+    </nav>
+
+    <section class="section" style="margin-top: 4rem;">
+        <div class="section-header">
+            <h1 class="section-title">Bespoke Interior Services</h1>
+            <p class="section-desc">Turnkey interior architecture, custom furniture crafting, and space planning.</p>
+        </div>
+
+        <div class="estimator-container">
+            <h3 style="font-size: 2rem; text-align: center; margin-bottom: 2rem; color: var(--accent-gold);">Interactive Project Estimator</h3>
+            
+            <div class="form-group">
+                <label>Property Scope & Footprint</label>
+                <select id="propScope" class="form-control">
+                    <option value="3bhk">Luxury 3 BHK Apartment (1,800 - 2,400 SqFt)</option>
+                    <option value="4bhk">Executive 4 BHK Residence (2,500 - 3,500 SqFt)</option>
+                    <option value="villa">Grand Villa / Independent House (4,000+ SqFt)</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label>Design Style Preference</label>
+                <select id="designStyle" class="form-control">
+                    <option value="minimalist">Modern Warm Minimalist</option>
+                    <option value="neoclassical">Neoclassical Luxury</option>
+                    <option value="italian">Imported Italian Modern</option>
+                </select>
+            </div>
+
+            <button id="calculateEstimate" class="btn-gold" style="width: 100%; border: none; cursor: pointer; font-size: 1rem; padding: 1rem;">Calculate Estimated Investment</button>
+
+            <div id="estimateResult"></div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-bottom">&copy; 2026 Durga Interiors. All Rights Reserved.</div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

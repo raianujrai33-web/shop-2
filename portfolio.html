@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Gallery | Durga Interiors</title>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Outfit:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/main.css">
+    <style>
+        .filter-nav { display: flex; justify-content: center; gap: 1.5rem; margin-bottom: 3rem; }
+        .filter-btn { background: none; border: 1px solid var(--border-color); color: var(--text-muted); padding: 0.6rem 1.5rem; cursor: pointer; text-transform: uppercase; font-size: 0.85rem; letter-spacing: 1.5px; transition: var(--transition); }
+        .filter-btn.active, .filter-btn:hover { background: var(--accent-gold); color: #000; border-color: var(--accent-gold); }
+    </style>
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="nav-brand">Durga <span>Interiors</span></div>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="portfolio.html" class="active">Portfolio</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="contact.html">Showroom</a></li>
+            <li><a href="contact.html" class="btn-gold">Private Consultation</a></li>
+        </ul>
+    </nav>
+
+    <section class="section" style="margin-top: 4rem;">
+        <div class="section-header">
+            <h1 class="section-title">The Legacy Gallery</h1>
+            <p class="section-desc">Explore our extensive portfolio across modular kitchens, master suites, and bespoke living spaces.</p>
+        </div>
+
+        <div class="filter-nav">
+            <button class="filter-btn active" data-filter="all">All Projects</button>
+            <button class="filter-btn" data-filter="kitchen">Modular Kitchens</button>
+            <button class="filter-btn" data-filter="living">Living Rooms</button>
+            <button class="filter-btn" data-filter="bedroom">Bedrooms & Wardrobes</button>
+        </div>
+
+        <div class="grid-3">
+            <div class="card gallery-item kitchen">
+                <div class="card-img-wrapper"><img src="img/pexels-artbovich-6908565.jpg" alt="Kitchen"></div>
+                <div class="card-content">
+                    <span class="card-tag">Modular Kitchen</span>
+                    <h3 class="card-title">Oak & Matte Black Kitchen</h3>
+                </div>
+            </div>
+
+            <div class="card gallery-item kitchen">
+                <div class="card-img-wrapper"><img src="img/pexels-perqued-9757618.jpg" alt="Kitchen"></div>
+                <div class="card-content">
+                    <span class="card-tag">Modular Kitchen</span>
+                    <h3 class="card-title">Industrial Fluted Kitchen</h3>
+                </div>
+            </div>
+
+            <div class="card gallery-item kitchen">
+                <div class="card-img-wrapper"><img src="img/pexels-ranamatloob567-35189708.jpg" alt="Kitchen"></div>
+                <div class="card-content">
+                    <span class="card-tag">Modular Kitchen</span>
+                    <h3 class="card-title">Champagne Acrylic Kitchen</h3>
+                </div>
+            </div>
+
+            <div class="card gallery-item kitchen">
+                <div class="card-img-wrapper"><img src="img/pexels-roshan-patel-1084731939-20653871.jpg" alt="Kitchen"></div>
+                <div class="card-content">
+                    <span class="card-tag">Modular Kitchen</span>
+                    <h3 class="card-title">Botanical High-Gloss Kitchen</h3>
+                </div>
+            </div>
+
+            <div class="card gallery-item bedroom">
+                <div class="card-img-wrapper"><img src="img/pexels-skylar-kang-6207451.jpg" alt="Bedroom"></div>
+                <div class="card-content">
+                    <span class="card-tag">Master Suite</span>
+                    <h3 class="card-title">Charcoal Velvet Bedroom</h3>
+                </div>
+            </div>
+
+            <div class="card gallery-item bedroom">
+                <div class="card-img-wrapper"><img src="img/pexels-the-ghazi-2152398165-32331030.jpg" alt="Wardrobe"></div>
+                <div class="card-content">
+                    <span class="card-tag">Bespoke Joinery</span>
+                    <h3 class="card-title">Minimalist Sliding Wardrobe</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-bottom">&copy; 2026 Durga Interiors. All Rights Reserved.</div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
